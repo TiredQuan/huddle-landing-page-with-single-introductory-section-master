@@ -1,0 +1,13 @@
+*,  *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: $violet;
+    background-image: url(/dist/images/bg-mobile.svg);
+    // background-image:url('../images/background.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:contain;
+    color: white;
+}

@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #674baf;
+  background-image: url(/dist/images/bg-mobile.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6.400vw;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.133vw;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#images {
+  text-align: left;
+  margin: 64px auto 0 auto;
+  width: 78.933vw;
+}
+
+.container {
+  width: 78.933vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 35.200vw;
+  height: 8.711vw;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 132px;
+    height: 32.66665px;
+  }
+}
+
+.illust {
+  width: 78.933vw;
+  height: 55.733vw;
+  margin: 121px auto;
+}
+
+main .register {
+  width: 53.333vw;
+  height: 10.667vw;
+  color: #674baf;
+  font-size: 1.40625rem;
+  border-radius: 50px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 126px;
+  -webkit-box-shadow: 0px 11px 11px 4px rgba(30, 30, 60, 0.25);
+          box-shadow: 0px 11px 11px 4px rgba(30, 30, 60, 0.25);
+  background-color: white;
+  cursor: pointer;
+}
+
+main .register :hover {
+  background-color: #e882e8;
+}
+
+@media screen and (max-width: 500px) {
+  main .register {
+    width: 200px;
+    height: 40px;
+    font-size: 0.9375rem;
+  }
+}
+
+main .register:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 206px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+footer button {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+}
+
+footer button i {
+  font-size: 1.5rem;
+}
+
+.media:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+/*# sourceMappingURL=main.css.map */

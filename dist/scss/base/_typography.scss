@@ -1,0 +1,21 @@
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.400vw;
+    margin-top: 0;
+    @media screen and (max-width: 500px){
+        font-size: $font-size*2;
+    }
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.133vw;
+    @media screen and (max-width: 500px){
+        font-size: $font-size*1.2;
+    }
+}
+a {
+    text-decoration: none;
+}
