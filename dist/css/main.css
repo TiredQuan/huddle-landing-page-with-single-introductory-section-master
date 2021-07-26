@@ -6,7 +6,7 @@
 body {
   margin: 0;
   background-color: #674baf;
-  background-image: url(/dist/images/bg-mobile.svg);
+  background-image: url(../../../dist/images/bg-mobile.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 @media screen and (min-width: 1408px) {
   body {
-    background-image: url(/dist/images/bg-desktop.svg);
+    background-image: url(../../../dist/images/bg-desktop.svg);
   }
 }
 
