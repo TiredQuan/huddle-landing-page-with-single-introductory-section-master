@@ -9,8 +9,14 @@ body {
   background-image: url(/dist/images/bg-mobile.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: white;
+}
+
+@media screen and (min-width: 1408px) {
+  body {
+    background-image: url(/dist/images/bg-desktop.svg);
+  }
 }
 
 h1 {
@@ -25,6 +31,12 @@ h1 {
   }
 }
 
+@media screen and (min-width: 1408px) {
+  h1 {
+    font-size: 2.625rem;
+  }
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 4.133vw;
@@ -36,8 +48,32 @@ p {
   }
 }
 
+@media screen and (min-width: 1408px) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
+
 a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 1408px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 #images {
@@ -46,31 +82,23 @@ a {
   width: 78.933vw;
 }
 
+@media screen and (min-width: 1408px) {
+  #images {
+    margin: 4.444vw 0 0 5.556vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 696px;
+  }
+}
+
 .container {
   width: 78.933vw;
   text-align: center;
   margin: 0 auto;
 }
 
-.logo {
-  width: 35.200vw;
-  height: 8.711vw;
-}
-
-@media screen and (max-width: 500px) {
-  .logo {
-    width: 132px;
-    height: 32.66665px;
-  }
-}
-
-.illust {
-  width: 78.933vw;
-  height: 55.733vw;
-  margin: 121px auto;
-}
-
-main .register {
+.container .register {
   width: 53.333vw;
   height: 10.667vw;
   color: #674baf;
@@ -85,24 +113,75 @@ main .register {
   cursor: pointer;
 }
 
-main .register :hover {
+.container .register :hover {
   background-color: #e882e8;
 }
 
 @media screen and (max-width: 500px) {
-  main .register {
+  .container .register {
     width: 200px;
     height: 40px;
-    font-size: 0.9375rem;
   }
 }
 
-main .register:hover {
+@media screen and (min-width: 1408px) {
+  .container .register {
+    height: 56px;
+    width: 200px;
+    font-size: 1.125rem;
+    margin: 0;
+  }
+}
+
+.container .register:hover {
   background-color: #e882e8;
   color: white;
 }
 
-footer {
+@media screen and (min-width: 1408px) {
+  .container {
+    text-align: left;
+    margin: 233px 0 0 53px;
+    padding-right: 75px;
+    width: 41.111vw;
+    height: 290px;
+  }
+}
+
+.logo {
+  width: 35.200vw;
+  height: 8.711vw;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 132px;
+    height: 32.66665px;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .logo {
+    width: 264px;
+    height: 65.3333px;
+  }
+}
+
+.illust {
+  width: 78.933vw;
+  height: 55.733vw;
+  margin: 121px auto;
+}
+
+@media screen and (min-width: 1408px) {
+  .illust {
+    margin: 61px auto 0 auto;
+    width: 696px;
+    height: 493px;
+  }
+}
+
+#media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,12 +195,22 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 206px;
+  width: 216px;
   height: 60px;
   margin: 0 auto;
 }
 
-footer button {
+@media screen and (min-width: 1408px) {
+  #media {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 5.556vw;
+  }
+}
+
+#media button {
   color: white;
   background-color: transparent;
   cursor: pointer;
@@ -129,13 +218,14 @@ footer button {
   border-radius: 50%;
   width: 52px;
   height: 52px;
+  margin-left: 15px;
 }
 
-footer button i {
+#media button i {
   font-size: 1.5rem;
 }
 
-.media:hover {
+#media .media:hover {
   color: #e882e8;
   border-color: #e882e8;
 }
